@@ -1,0 +1,16 @@
+body {
+    width: 250px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 14px;
+}

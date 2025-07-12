@@ -1,0 +1,9 @@
+{
+  "name": "com.my_app.native_host",
+  "description": "Host for executing system commands.",
+  "path": "/path_to_this_dir/native_host.py",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://your_extension_string_id/"
+  ]
+}

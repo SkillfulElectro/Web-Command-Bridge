@@ -1,0 +1,88 @@
+/* Ensure our styles don't get messed up by the host page */
+#my-command-dialog-container {
+    all: initial;
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2147483647; /* Max z-index */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dialog-box {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 600px;
+    color: #333;
+}
+
+.dialog-box h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dialog-box p {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.dialog-box pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word;
+}
+
+.dialog-box code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: #c7254e;
+}
+
+.dialog-buttons {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.dialog-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dialog-buttons .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+.dialog-buttons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.dialog-buttons .btn-secondary {
+    background-color: #e9ecef;
+    color: #333;
+}
+.dialog-buttons .btn-secondary:hover {
+    background-color: #d6d8db;
+}
