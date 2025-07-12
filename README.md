@@ -1,5 +1,5 @@
 # Web-Command-Bridge
-simple web extension for exec sys commands
+this extension will scan the webpage for the valid commands and runs them into the shell , if you want to grant full access to the shell in native_host.py set the shell to True .
 
 ## How to install :
 clone the repo :
